@@ -9,12 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <h1>Генерація випадкового числа в заданому діапазоні</h1>
-    <p>Введіть мінімальне значення: <input type="text" id="minValue"></p>
-    <p>Введіть максимальне значення: <input type="text" id="maxValue"></p>
+    <p>Введіть мінімальне значення: <input type="text" class="val" id="minValue"></p>
+    <p>Введіть максимальне значення: <input type="text" class="val" id="maxValue"></p>
+    <p>Виберіть тип числа:</p>
+    <input type="radio" id="any" name="numberType" value="any" checked>
+    <label for="any">Будь-які</label>
+    <input type="radio" id="even" name="numberType" value="even" checked>
+    <label for="even">Парні</label>
+    <input type="radio" id="odd" name="numberType" value="odd">
+    <label for="odd">Непарні</label>
+    <br>
+    <input type="checkbox" id="includeBoundaries" name="includeBoundaries">
+    <label for="includeBoundaries">Включати введені числа</label>
+    <br>
     <button onclick="generateRandomNumber()">Сгенерувати число</button>
     <h2>Результат: <span id="result"></span></h2>
     <script src="script.js"></script>

@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Site</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
 </head>
-<body>  
+<body>
+    <h1>Генерація випадкового числа в заданому діапазоні</h1>
+    <p>Введіть мінімальне значення: <input type="text" id="minValue"></p>
+    <p>Введіть максимальне значення: <input type="text" id="maxValue"></p>
+    <button onclick="generateRandomNumber()">Сгенерувати число</button>
+    <h2>Результат: <span id="result"></span></h2>
+    <script src="script.js"></script>
 </body>
 </html>
